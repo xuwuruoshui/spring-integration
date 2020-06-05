@@ -1,0 +1,23 @@
+Changed password for user apm_system
+PASSWORD apm_system = rxqq3ZZrkjJWokx5I77k
+
+Changed password for user kibana
+PASSWORD kibana = euEUiYv5xOMSmSL6NGNW
+
+Changed password for user logstash_system
+PASSWORD logstash_system = HtOA6vefpgLfQthIYez9
+
+Changed password for user beats_system
+PASSWORD beats_system = cj3zTpQm9bX1ynyCR2qM
+
+Changed password for user remote_monitoring_user
+PASSWORD remote_monitoring_user = YwhyOVgKXj314Mag6vYa
+
+Changed password for user elastic
+PASSWORD elastic = LtsWpnrbdKh2hJuV7kEw
+
+ curl -H "Content-Type:application/json" -XPOST -u elastic:LtsWpnrbdKh2hJuV7kEw 'http://localhost:9200/_xpack/security/user/elastic/_password' -d '{ "password" : "123456" }'
+
+POST
+http://localhost:9200/_xpack/security/user/elastic/_password
+{ "password" : "123456"}

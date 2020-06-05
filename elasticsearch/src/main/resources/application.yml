@@ -1,0 +1,14 @@
+logging:
+  config: classpath:logback-spring.xml
+spring:
+  thymeleaf:
+    cache: false
+  elasticsearch:
+    rest:
+      connection-timeout: 5000
+      uris: http://localhost:9200
+      read-timeout: 5000
+      username: elastic
+      password: 123456
+
+
